@@ -1,6 +1,7 @@
 import { Montserrat, PT_Serif } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./componenets/Footer";
 
 // Import Google Fonts
 const montserrat = Montserrat({
@@ -44,7 +45,9 @@ export default function RootLayout({ children }) {
         className={`${montserrat.variable} ${ptSerif.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
+    
     </html>
   );
 }
